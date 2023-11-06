@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 
+        precidence:-
+        there are two or more css rules that point to the same element, then selector with highest precidence will
+        win
+
+
+        Every CSS selector has its place in the specificity hierarchy.
+
+There are four categories which define the specificity level of a selector:
+
+Inline styles - Example: <h1 style="color: pink;">
+IDs - Example: #navbar
+Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]
+Elements and pseudo-elements - Example: h1, ::before
+
+Note: Inline style gets a specificity value of 1000, and is always given the highest priority!
+
+Note 2: There is one exception to this rule: if you use the !important rule, it will even override inline styles!
+
+Equal specificity: the latest rule wins - If the same rule is written twice into the external style sheet, then the latest rule wins:
+
+
+
+ID selectors have a higher specificity than attribute selectors - Look at the following three code lines:
+
+div#a {background-color: green;} /// this will work
+#a {background-color: yellow;}
+div[id=a] {background-color: blue;}
+
+
+A class selector beats any number of element selectors - a class selector such as .intro beats h1, p, div, etc:
+
+-->
+
+
+
+
+<h1>DOM Bhai!</h1>
+
+<h2>Aish</h2>
+<h2>Zebra</h2>
+
+
+<div class="newdiv">
+    <h3>Gaurav</h3>
+</div>
+
+<script src="dom.js"></script>
+
+
+
+</body>
+</html>
